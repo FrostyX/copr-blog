@@ -1,0 +1,10 @@
+<h1>Copr blog</h1>
+<p>Copr is the best buildsystem in the universe.</p>
+
+<hr>
+
+{% for post in posts %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.date_str }} | {{ post.author }}</p>
+    <p>{{ post.perex }}</p>
+{% endfor %}
